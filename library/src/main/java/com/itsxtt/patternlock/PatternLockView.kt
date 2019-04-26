@@ -1,17 +1,17 @@
 package com.itsxtt.patternlock
 
-import android.content.Context
-import android.graphics.Paint
-import android.graphics.drawable.Drawable
-import android.util.AttributeSet
-import android.widget.GridLayout
 import android.annotation.SuppressLint
+import android.content.Context
 import android.graphics.Canvas
+import android.graphics.Paint
 import android.graphics.Path
+import android.graphics.drawable.Drawable
 import android.support.v4.content.ContextCompat
+import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
+import android.widget.GridLayout
 import java.util.*
 
 

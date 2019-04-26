@@ -1,41 +1,8 @@
 # Pattern Lock View 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PatternLockView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6988) [![Download](https://api.bintray.com/packages/itsxtt/maven/patternlockview/images/download.svg) ](https://bintray.com/itsxtt/maven/patternlockview/_latestVersion)
 
-Awesome pattern lock view for android written in kotlin.
-
-[demo](https://github.com/itsxtt/pattern-lock/tree/master/apk)
-
-## Features
-
-* easy to use
-* beautiful built-in styles
-* fully customizable
-* tiny size around 35 KB
-
-## Preview
-
-<ul style="float:left">
-    <img src="./screenshots/default.gif" width="150"/>
-    <img src="./screenshots/indicator.gif" width="150"/>
-    <img src="./screenshots/jdstyle.gif" width="150"/>
-    <img src="./screenshots/nine.gif" width="150"/>
-</ul>
+Private copy of [pattern-lock](https://github.com/itsxtt/pattern-lock) for internal usage
 
 ## Usage
-
-### Gradle
-Top level build file:
-``` gradle
-allprojects {
-    repositories {
-        jcenter()
-    }
-}
-```
-In your application build file:
-``` gradle
-implementation 'com.itsxtt:patternlockview:0.1.0'
-```
 
 ### XML
 
@@ -135,16 +102,11 @@ plv_columnCount | integer | 3 |
 plv_errorDuration | integer | 400 | millisecond
 plv_hitAreaPaddingRatio | float | 0.2 |
 plv_indicatorSizeRatio | float | 0.2 |
+troya_cellSize | dimension | 0dp (auto-size) |
 
 #### Secure Mode
 
 You can turn the secure mode on or off via call ```enableSecureMode()``` and ```disableSecureMode()```.
-
-
-## Change Log
-
-### 0.1.0 (2018-05-31)
-* first release
 
 ## License
 
