@@ -1,17 +1,17 @@
 package com.itsxtt.patternlock
 
-import android.annotation.SuppressLint
 import android.content.Context
-import android.graphics.Canvas
 import android.graphics.Paint
-import android.graphics.Path
 import android.graphics.drawable.Drawable
-import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
+import android.widget.GridLayout
+import android.annotation.SuppressLint
+import android.graphics.Canvas
+import android.graphics.Path
+import android.support.v4.content.ContextCompat
 import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
-import android.widget.GridLayout
 import java.util.*
 
 
@@ -85,6 +85,7 @@ class PatternLockView : GridLayout {
 
     constructor(context: Context, attributeSet: AttributeSet) : super(context, attributeSet) {
         val ta = context.obtainStyledAttributes(attributeSet, R.styleable.PatternLockView)
+
         regularCellBackground = ta.getDrawable(R.styleable.PatternLockView_plv_regularCellBackground)
         regularDotColor = ta.getColor(R.styleable.PatternLockView_plv_regularDotColor, ContextCompat.getColor(context, R.color.regularColor))
         regularDotRadiusRatio = ta.getFloat(R.styleable.PatternLockView_plv_regularDotRadiusRatio, DEFAULT_RADIUS_RATIO)
@@ -204,7 +205,6 @@ class PatternLockView : GridLayout {
                 val lastCell = selectedCells[selectedCells.size - 1]
                 val lastCellCenter = lastCell.getCenter()
                 val radius = lastCell.getRadius()
-
                 if (!(lastX >= lastCellCenter.x - radius &&
                         lastX <= lastCellCenter.x + radius &&
                         lastY >= lastCellCenter.y - radius &&

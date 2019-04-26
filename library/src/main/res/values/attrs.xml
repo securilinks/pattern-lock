@@ -33,6 +33,7 @@
         <attr name="plv_indicatorSizeRatio" format="float"/>
 
         <attr name="troya_cellSize" format="dimension" />
+
     </declare-styleable>
 
 </resources>
